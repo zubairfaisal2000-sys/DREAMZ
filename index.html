@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DREAMS – Apartments and rooms to book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<nav id="nav"><a href="#top" class="logo" aria-label="DREAMS home"><i></i>DREAMS</a>
+<button class="bg" id="bg" aria-label="Menu" aria-expanded="false"><b></b><b></b></button>
+<div class="links" id="links"><a class="l" href="#top">Home</a><a class="l" href="#stays" data-f="apartment">Explore Apartments</a><a class="l" href="#stays" data-f="room">Rooms</a><a class="l" href="#about">About Us</a><a class="l" href="#contact">Contact</a><button class="si" id="si">Sign In</button><button class="btn" data-book>Book Now</button></div></nav>
+
+<header id="hero"><div class="pin" id="top">
+<video id="v" src="assets/video/hero.mp4" muted playsinline preload="auto" tabindex="-1" aria-hidden="true"></video>
+<div class="ch on"><h1>Stay somewhere you would rather live.</h1><p>Hand-picked apartments and rooms, filmed on site. Scroll to walk through one.</p><a class="btn o" href="#stays">Browse stays</a></div>
+<div class="ch"><h2>Move through it at your own pace.</h2><p>Every residence is shown as it really is, from the entrance to the last window.</p></div>
+<div class="ch"><h2>Light, space and quiet.</h2><p>Pick your dates below and see what is free.</p><button class="btn" data-book>Book now</button></div>
+<div class="rail"><i id="ri"></i><span id="tc">0:00 / 0:10</span></div>
+<div class="cue" id="cue"><u></u>Scroll to play the video</div>
+<div class="bar" role="search"><label>Check in<input type="date" id="ci"></label><label>Check out<input type="date" id="co"></label><label>Guests<select id="gs"></select></label><button class="btn" id="chk">Check availability</button></div>
+</div></header>
+
+<section id="stays"><div class="hd"><div><h2 class="t">Find your stay</h2><p>Whole apartments for longer plans, private rooms for shorter ones.</p></div>
+<div class="chips" id="chips"><button class="chip" data-f="all" aria-pressed="true">All stays</button><button class="chip" data-f="apartment" aria-pressed="false">Apartments</button><button class="chip" data-f="room" aria-pressed="false">Rooms</button></div></div>
+<div class="note" id="note"></div><div class="grid" id="grid"></div></section>
+
+<section id="about"><div><h2 class="t">We visit every place before it is listed.</h2><p>DREAMS started with one rule: the photos must match the door. Our team inspects, films and rates each apartment and room, then keeps it only if guests agree.</p></div>
+<dl><div><dt>Inspected in person</dt><dd>Every listing is visited and filmed before it goes live.</dd></div><div><dt>Flexible plans</dt><dd>Cancel free up to 48 hours before check-in.</dd></div><div><dt>Help in your language</dt><dd>Our concierge team answers in English, Arabic, Urdu, French, Spanish and Italian.</dd></div></dl></section>
+
+<section id="contact"><div class="ct"><div><h2 class="t">Talk to a concierge.</h2><p style="color:var(--mut)">Tell us your dates and what matters most. We reply within a few hours.</p><p>concierge@dreams.example<br>Daily, 8:00 to 22:00</p></div>
+<form class="f" id="cf"><input class="in" required placeholder="Your name" aria-label="Your name"><input class="in" type="email" required placeholder="Email address" aria-label="Email"><textarea class="in" rows="4" required placeholder="How can we help?" aria-label="Message"></textarea><button class="btn" style="justify-self:start;background:var(--pine);color:#f3f1ea">Send message</button></form></div></section>
+<footer><span>© 2026 DREAMS. All rights reserved.</span><span>Privacy · Terms · Cancellation policy</span></footer>
+<dialog id="m"><button class="cl" aria-label="Close" onclick="m.close()">×</button><div id="mc"></div></dialog><div id="toast" role="status"></div>
+
+<script src="js/main.js"></script></body></html>
